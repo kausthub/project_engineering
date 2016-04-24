@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}User Registration{% endblock %}
+{% block head %}{% endblock %}
+{% block content %}
+ <div id="login">
+  <div id="triangle"></div>
+  <h1>Register</h1>
+    <form method="post" action=".">{% csrf_token %}
+        <table border="0">
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="Register" />
+            <a href="http://soildata.pythonanywhere.com/login">Login</a>
+    </form>
+    </div>
+{% endblock %}

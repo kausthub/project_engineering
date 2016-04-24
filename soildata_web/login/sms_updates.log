@@ -1,0 +1,95 @@
+DEBUG:django.db.backends:(0.007) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = test ; args=('test',)
+DEBUG:django.db.backends:(0.003) SELECT "login_farm_new"."id", "login_farm_new"."user_id", "login_farm_new"."name", "login_farm_new"."state", "login_farm_new"."crop_name" FROM "login_farm_new" WHERE "login_farm_new"."user_id" = 2 ; args=(2,)
+DEBUG:django.db.backends:(0.005) SELECT "login_crop_new"."date_of_reading" FROM "login_crop_new" WHERE "login_crop_new"."farm_id" = 1  ORDER BY "login_crop_new"."id" DESC LIMIT 1; args=(1,)
+DEBUG:django.db.backends:(0.007) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = test ; args=('test',)
+DEBUG:django.db.backends:(0.003) SELECT "login_farm_new"."id", "login_farm_new"."user_id", "login_farm_new"."name", "login_farm_new"."state", "login_farm_new"."crop_name" FROM "login_farm_new" WHERE "login_farm_new"."user_id" = 2 ; args=(2,)
+DEBUG:django.db.backends:(0.003) SELECT "login_crop_new"."date_of_reading" FROM "login_crop_new" WHERE "login_crop_new"."farm_id" = 1  ORDER BY "login_crop_new"."id" DESC LIMIT 1; args=(1,)
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+DEBUG:django.db.backends:(0.008) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = test ; args=('test',)
+DEBUG:django.db.backends:(0.003) SELECT "login_farm_new"."id", "login_farm_new"."user_id", "login_farm_new"."name", "login_farm_new"."state", "login_farm_new"."crop_name" FROM "login_farm_new" WHERE "login_farm_new"."user_id" = 2 ; args=(2,)
+DEBUG:django.db.backends:(0.004) SELECT "login_crop_new"."date_of_reading" FROM "login_crop_new" WHERE "login_crop_new"."farm_id" = 1  ORDER BY "login_crop_new"."id" DESC LIMIT 1; args=(1,)
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+DEBUG:django.db.backends:(0.007) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = test ; args=('test',)
+DEBUG:django.db.backends:(0.003) SELECT "login_farm_new"."id", "login_farm_new"."user_id", "login_farm_new"."name", "login_farm_new"."state", "login_farm_new"."crop_name" FROM "login_farm_new" WHERE "login_farm_new"."user_id" = 2 ; args=(2,)
+DEBUG:django.db.backends:(0.005) SELECT "login_crop_new"."date_of_reading" FROM "login_crop_new" WHERE "login_crop_new"."farm_id" = 1  ORDER BY "login_crop_new"."id" DESC LIMIT 1; args=(1,)
+DEBUG:django.db.backends:(0.007) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = test ; args=('test',)
+DEBUG:django.db.backends:(0.003) SELECT "login_farm_new"."id", "login_farm_new"."user_id", "login_farm_new"."name", "login_farm_new"."state", "login_farm_new"."crop_name" FROM "login_farm_new" WHERE "login_farm_new"."user_id" = 2 ; args=(2,)
+DEBUG:django.db.backends:(0.006) SELECT "login_crop_new"."date_of_reading" FROM "login_crop_new" WHERE "login_crop_new"."farm_id" = 1  ORDER BY "login_crop_new"."id" DESC LIMIT 1; args=(1,)
+DEBUG:django.db.backends:(0.007) SELECT "auth_user"."id", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."is_superuser", "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = test ; args=('test',)
+DEBUG:django.db.backends:(0.003) SELECT "login_farm_new"."id", "login_farm_new"."user_id", "login_farm_new"."name", "login_farm_new"."state", "login_farm_new"."crop_name" FROM "login_farm_new" WHERE "login_farm_new"."user_id" = 2 ; args=(2,)
+DEBUG:django.db.backends:(0.004) SELECT "login_crop_new"."date_of_reading" FROM "login_crop_new" WHERE "login_crop_new"."farm_id" = 1  ORDER BY "login_crop_new"."id" DESC LIMIT 1; args=(1,)
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688
+INFO:root:sms has been sent to the number 9535264688

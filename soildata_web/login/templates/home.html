@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block chart %}
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'Optimum_Temp');
+      data.addColumn('number', 'Temperature');
+
+      data.addRows({{data|safe}});
+
+      var options = {
+        hAxis: {
+          title: 'Time'
+        },
+        vAxis: {
+          title: 'Popularity'
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+</script>
+
+{% endblock%}
+{% block title %}Welcome to Django{% endblock %}
+{% block head %}
+Welcome to Django{% endblock %}
+{% block content %}
+    <p>Welcome {{ user.username }} !!!</p>
+    <div id="chart_div" style="width:400; height:300"></div>
+    <a href="/logout/">Logout</a>
+{% endblock %}

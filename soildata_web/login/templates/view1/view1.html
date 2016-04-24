@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+<style>
+  html {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+   body,#map-canvas
+  {
+    height: 100%;
+        margin: 0px;
+        padding: 0px
+  }
+  .goog-te-banner-frame.skiptranslate
+  {
+  	display: none !important;
+  }
+  .goog-tooltip
+  {
+    display: none !important;
+  }
+  body
+  {
+  	top:0px !important;
+  }
+  .goog-te-gadget-icon
+  {
+  	display: none !important;
+  }
+  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Farmalytics | Bringing Farming to a new Era</title>
+  <link rel="shortcut icon" href="/static/image/logo.png" type="image/x-icon">
+  <link rel="icon" href="/static/image/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="/static/bower_components/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/app.css">
+  <script src="/static/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+  <script src="/static/lib/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/js/smoothscroll.js"></script>
+  <script src="/static/bower_components/angular/angular.js"></script>
+  <script src="/static/bower_components/angular-route/angular-route.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.2.0/bootbox.min.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>
+  <script src="/static/lib/client platform.js"></script>
+  <script src="/static/lib/parallax.min.js"></script>
+  <script src="/static/js/app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="/static/components/version/version.js"></script>
+  <script src="/static/components/version/version-directive.js"></script>
+  <script src="/static/components/version/interpolate-filter.js"></script>
+
+
+  <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,bn,gu,hi,kn,mr,ta,te,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                        }
+                        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+<!-- Navigation -->
+	<link href="/static/css/landing-page.css" rel="stylesheet">
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#start">
+                	<img src = "/static/image/logo.png" height="70" width="70"/>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <div id="google_translate_element" style="margin-top:13px;margin-left:13px;"></div>
+
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="login" href="http://soildata.pythonanywhere.com/login">Login</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="smoothScroll">About</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="smoothScroll">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="smoothScroll">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <div id="start" class="intro-header" style="background-image:url(/static/image/i1.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message parallax-window">
+                        <h1>Farmalytics</h1>
+                        <center><hr class="intro-divider"></center>
+                        <h3>Bringing Farming to a new Era</h3>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- Page Content -->
+
+    <div id="about" class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+	                <h1>About Us</h1>
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+	                <p class="lead">We at Farmalytics want to make Precision Farming easy and affordable by providing state of the art sensor technology with  robust Analytics to help farmers make data driven decisions like every other business of the 21st century</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div id="services" class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+            	<center>
+            		<h1>What We Offer</h1>
+            		<hr />
+
+            	</center>
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <center>
+                    	<h3>Analytics</h3>
+                    	<hr/>
+                    </center>
+                    <div class="clearfix"></div>
+                    <p class="lead">
+                    	To help you make better decisions by using our advanced algorithms with the data from the sensor network and local weather patterns to give you recommendations
+                    </p>
+                    <p class="lead">
+                    	We display the data in easy to understand graphs and charts so they will be more valuable to you
+                    </p>
+                    <center>
+                    	<img src="/static/image/analytics.png" height="200px" width="300px">
+                    </center>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                	<center>
+	                    <h3>Data Collection</h3>
+	                    <hr>
+                    </center>
+                    <div class="clearfix"></div>
+                    <p class="lead">Our device can get hyperlocal soil conditions in real time</p>
+                    <p class="lead">It uses a wireless sensor network to collect the data</p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <center>
+                    	<img src="/static/image/sensors.png" height="200px" width="300px">
+                    </center>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <center>
+                    	<h3>Your Data, Wherever You are</h3>
+                    	<hr/>
+                    </center>
+                    <div class="clearfix"></div>
+                    <p class="lead">
+                    	Our solution is platform independent, you can access everything about your farm from your PC, Mac, phone or tablet
+                    </p>
+                    <center>
+                    	<img src="/static/image/form-factors.png" height="200px" width="300px">
+                    </center>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <center>
+	                    <h3>Farm Management</h3>
+	                    <hr>
+                    </center>
+                    <div class="clearfix"></div>
+                    <p class="lead">Our website and app will help you organize and manage large farms. This allows you to easily get updates, notofiations about the data being collected</p>
+                    <center>
+                    	<img src="/static/image/management.png" height="200px" width="200px">
+                    </center>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <center>
+	                    <h3>Extend your Growth cycle</h3>
+	                    <hr>
+                    </center>
+                    <div class="clearfix"></div>
+                    <p class="lead">By using your soil properly, you can grow a lot more crops for a lot longer without worrying about over exploiting the soil by following a scientific approach to farming</p>
+                    <center>
+                    	<img src="/static/image/graph.png" height="200px" width="200px">
+                    </center>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <center>
+	                    <h3 class="notranslate">A ಅ अ க் અ</h3>
+	                    <hr>
+                    </center>
+                    <div class="clearfix"></div>
+                    <p class="lead">You will be able to see information about your farm in a variety of Indian languages. Whether it be the app or website, access everything in the language of your choice</p>
+                    <center>
+                    	<img src="/static/image/multilingual.png" height="200px" width="300px">
+                    </center>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    <div id="contact" class="banner" style="background-image: url(/static/image/i3.jpg)">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Connect with Farmalytics</h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="mailto:mail@farmalytics.com"
+                                class="btn btn-default btn-lg"
+                                target="_blank">
+                                <i class="fa fa-twitter fa-fw">
+                                    <span class="network-name">Email</span>
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.blog.farmalytics.com"
+                                class="btn btn-default btn-lg"
+                                target="_blank">
+                                <i class="fa fa-github fa-fw">
+                                    <span class="network-name">Blog</span>
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/FarmalyticsInc"
+                                class="btn btn-default btn-lg"
+                                target="_blank">
+                                <i class="fa fa-linkedin fa-fw">
+                                    <span class="network-name">Twitter</span>
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#start" class="smoothScroll">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li>
+                            <a href="#about" class="smoothScroll">About</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li>
+                            <a href="#services" class="smoothScroll">Services</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li>
+                            <a href="http://soildata.pythonanywhere.com/login" class="login">Login</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright © Farmalytics 2015. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/js/parallax.min.js"></script>
+    <script src="/static/js/scroll.min.js"></script>
+    <script>
+       $(function() {
+            // alert("hello")
+            $('html').smoothScroll(500);
+       });
+    </script>
+
+</body>
+</html>

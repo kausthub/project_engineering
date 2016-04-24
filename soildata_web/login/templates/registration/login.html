@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Farmalytics{% endblock %}
+{% block head %}{% endblock %}
+{% block content %}
+
+    <div id="login">
+  <div id="triangle"></div>
+  <h1>Log in</h1>
+    <form method="post" action=".">{% csrf_token %}
+        <table border="0">
+            <tr><th><label for="id_username">Username:</label></th><td>{{ form.username }}</td></tr>
+            <tr><th><label for="id_password">Password:</label></th><td>{{ form.password }}</td></tr>
+        </table>
+        <input type="submit" value="Login" />
+        <input type="hidden" name="next" value="/home" />
+
+    <a href="/register">Register</a>
+
+    {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+    {% endif %}
+
+    </form>
+
+    </div>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+  <script src="/static/js/index.js"></script>
+{% endblock %}
+
